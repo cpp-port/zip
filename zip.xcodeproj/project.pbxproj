@@ -11,6 +11,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A0EF1C32A6269B000067390 /* _____release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "_____release.xcconfig"; sourceTree = "<group>"; };
+		9A0EF1C42A6269B000067390 /* _____debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "_____debug.xcconfig"; sourceTree = "<group>"; };
 		9A809D272A5FF45900FCA9FD /* libzip.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libzip.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A809D362A5FF4A700FCA9FD /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +47,8 @@
 		9A809D342A5FF48C00FCA9FD /* zip */ = {
 			isa = PBXGroup;
 			children = (
+				9A0EF1C42A6269B000067390 /* _____debug.xcconfig */,
+				9A0EF1C32A6269B000067390 /* _____release.xcconfig */,
 				9A809D352A5FF4A700FCA9FD /* src */,
 			);
 			name = zip;
@@ -134,6 +138,7 @@
 /* Begin XCBuildConfiguration section */
 		9A809D292A5FF45900FCA9FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0EF1C42A6269B000067390 /* _____debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -211,6 +216,7 @@
 		};
 		9A809D2A2A5FF45900FCA9FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0EF1C32A6269B000067390 /* _____release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
